@@ -16,32 +16,30 @@ export function Header() {
     <header className="fixed w-full bg-background/80 backdrop-blur-md z-50 border-b border-border">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-serif">Barclee Huggins</div>
+          <div className="text-2xl font-serif">Yoga Studio</div>
           
           <div className="hidden md:block">
             <NavigationMenu>
-              <NavigationMenuList className="space-x-8">
+              <NavigationMenuList>
                 <NavigationMenuItem>
-                  <a href="#home" className="text-muted-foreground hover:text-foreground transition-colors">Home</a>
+                  <Button variant="ghost">Classes</Button>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
+                  <Button variant="ghost">Schedule</Button>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <a href="#classes" className="text-muted-foreground hover:text-foreground transition-colors">Classes</a>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <a href="#blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
+                  <ContactModal>
+                    <Button variant="outline">Contact</Button>
+                  </ContactModal>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <ContactModal />
+            <ContactModal>
+              <Button variant="outline">Contact</Button>
+            </ContactModal>
             <ThemeToggle />
           </div>
 
@@ -62,7 +60,9 @@ export function Header() {
               <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
               <a href="#blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
               <div className="flex items-center space-x-4 pt-4">
-                <ContactModal />
+                <ContactModal>
+                  <Button variant="outline">Contact</Button>
+                </ContactModal>
                 <ThemeToggle />
               </div>
             </nav>

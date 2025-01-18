@@ -12,9 +12,10 @@ import { useToast } from '@/hooks/use-toast';
 
 interface ContactModalProps {
   variant?: "default" | "secondary" | "outline";
+  children?: React.ReactNode;
 }
 
-export function ContactModal({ variant = "default" }: ContactModalProps) {
+export function ContactModal({ variant = "default", children }: ContactModalProps) {
   const { toast } = useToast();
 
   const handleSubmit = () => {
@@ -40,6 +41,7 @@ export function ContactModal({ variant = "default" }: ContactModalProps) {
           </DialogDescription>
         </DialogHeader>
         <ContactForm onSubmit={handleSubmit} />
+        {children}
       </DialogContent>
     </Dialog>
   );

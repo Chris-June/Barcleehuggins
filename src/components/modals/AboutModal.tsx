@@ -19,7 +19,7 @@ export function AboutModal() {
       <DialogContent className="sm:max-w-[600px]">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-100/50 to-accent-100/50 dark:from-primary-950/50 dark:to-accent-950/50 rounded-lg -z-10" />
         <DialogHeader>
-          <DialogTitle>About Barclee Huggins</DialogTitle>
+          <DialogTitle>About Yoga Studio</DialogTitle>
           <DialogDescription>
             My journey in yoga and dedication to helping others find peace
           </DialogDescription>

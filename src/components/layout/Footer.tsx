@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-serif text-white mb-4">Barclee Huggins</h3>
+            <h3 className="text-2xl font-serif text-white mb-4">Yoga Studio</h3>
             <p className="mb-4">Transforming lives through the power of yoga.</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white"><Instagram /></a>
@@ -29,7 +29,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>123 Yoga Street</li>
               <li>Serenity City, SC 12345</li>
-              <li>contact@barcleehuggins.com</li>
+              <li>contact@YogaStudio.com</li>
               <li>(555) 123-4567</li>
             </ul>
           </div>
@@ -45,7 +45,8 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-neutral-800 mt-8 pt-8 text-center">
-          <p>&copy; 2024 Barclee Huggins Yoga. All rights reserved.</p>
+          <p>&copy; 2025 Yoga Studio. All rights reserved.</p>
+          <p className="text-sm text-neutral-500 mt-2">Powered by IntelliSync Solutions</p>
         </div>
       </div>
     </footer>
